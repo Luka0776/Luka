@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Senaki_panorama.jpg/800px-Senaki_panorama.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.contact-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container form label {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.contact-container form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-container form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #5b9bd5;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-container form button:hover {
+    background: #4a89c2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/2e/Senaki_Akaki_Khorava_Theatre.JPG) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+    position: fixed;
+    top: 0;
+}
+
+
+#tbc {
+   height: 80px;
+   width: 80px;
+   border-radius: 20px;
+}
+
+#tbc:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    top: 0
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+blockquote {
+    margin: 20px 0;
+    font-size: 24px;
+    font-style: italic;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.related-posts {
+    text-align: center;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #f4f4f4;
+}
+
+.footer {
+    background-color: #232323;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column p, .footer-column ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a i {
+    font-size: 20px;
+}
+
+.footer-bottom {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.subscribe {
+    color: white;
+    text-decoration: none;
+}
+
+.subscribe:hover {
+    text-decoration: underline;
+}
+
+.fa.fa-bars {
+    display: none
+}
+
+@media (max-width: 455px) {
+
+    .fa.fa-bars {
+        display: flex;
+        color: #1a1a1a;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post {
+        width: 90%;
+    }
+
+}@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
+}

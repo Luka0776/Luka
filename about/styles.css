@@ -1,0 +1,166 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #333;
+}
+
+.about-content button {
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+
+.about-content button:hover {
+    background: #555;
+}
+.social-media a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 465px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .mobile-nav ul li {
+        margin: 10px 0;
+    }
+
+    .mobile-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+}
